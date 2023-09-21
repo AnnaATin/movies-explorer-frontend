@@ -1,0 +1,22 @@
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts.css');
+
+:root {
+  --color-background: #202020;
+  --color-text: #fff;
+  --color-additional: #8B8B8B;
+  --color-input: #2F2F2F;
+  --color-button-card: #313131;
+  --color-error: #EE3465;
+  --color-inverted-main: #fff;
+  --color-link: #4285F4;
+  --button-disabled: #f8f8f8;
+  --color-button-disabled: #c2c2c2;
+  --nav-link: #303030;
+  --color-inverted: #000;
+  --inverted-color-main: #3DDC84;
+  --promo: #272727;
+  --border-color-main: #DADADA;
+  --color-border: #e8e8e8;
+  --color-button-else: #424242;
+}

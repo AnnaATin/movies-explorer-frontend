@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
   return (
-    <div className='portfolio'>
+    <section className='portfolio'>
       <h4 className='portfolio__title'>Портфолио</h4>
       <ul className='portfolio__list'>
         {portfolioData.map((item) => {
@@ -26,7 +26,7 @@ const Portfolio = () => {
           );
         })}
       </ul>
-    </div>
+    </section>
   );
 };
 

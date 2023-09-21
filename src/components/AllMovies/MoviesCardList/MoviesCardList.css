@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(271px, 1fr));
   grid-column-gap: 24px;
-  grid-row-gap: 30px;
+  grid-row-gap: 19px;
   box-sizing: border-box;
   width: 100%;
   margin-top: 79px;
@@ -24,9 +24,14 @@
   border: none;
   width: 320px;
   height: 36px;
-  margin: 64px 0 81px;
-  border: 1px solid var(--color-additional);
+  margin: 30px 0 81px;
+  border: 1px solid var(--color-button-else);
   border-radius: 6px;
+}
+@media (pointer: fine) {
+  .movies-list__more:hover {
+    opacity: 0.7;
+  }
 }
 @media screen and (max-width: 1200px) {
   .movies-list__grid {

@@ -8,7 +8,7 @@ const AboutProject = () => {
       className='about'
       id='about'
     >
-      <div className='about__content'>
+      <section className='about__content'>
         <Section>О проекте</Section>
         <ul className='about__info-list'>
           <li className='about__info-element'>
@@ -26,15 +26,15 @@ const AboutProject = () => {
             </p>
           </li>
         </ul>
-        <div className='about__duration'>
+        <section className='about__duration'>
           <h3 className='about__duration-heading about__duration-heading_type_inverted'>
             1 неделя
           </h3>
           <h3 className='about__duration-heading'>4 недели</h3>
           <p className='about__duration-caption'>Back-end</p>
           <p className='about__duration-caption'>Front-end</p>
-        </div>
-      </div>
+        </section>
+      </section>
     </section>
   );
 };

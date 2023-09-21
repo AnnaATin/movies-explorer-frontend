@@ -51,7 +51,7 @@ const App = () => {
     <CurrentUserContext.Provider value={currentUser}>
       <DeviceContext.Provider value={device}>
         <Suspense fallback={<Preloader/>}>
-        <div className="app">
+        <section className="app">
           <Routes>
             <Route
               path='/'
@@ -92,7 +92,7 @@ const App = () => {
               element={<NotFound />}
             />
           </Routes>
-        </div>  
+        </section>  
         </Suspense>
       </DeviceContext.Provider>
     </CurrentUserContext.Provider>

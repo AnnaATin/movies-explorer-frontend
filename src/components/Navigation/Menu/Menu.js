@@ -31,7 +31,7 @@ const Menu = ({ isDesktop }) => {
         </li>
         <li className='links__list-item'>
           <NavLink
-            className={({ isActive }) => `links__link links__link_type_profile ${isActive && 'links__link_active'}`}
+            className='links__link links__link_type_profile'
             to='/profile'
           >Аккаунт
           </NavLink>

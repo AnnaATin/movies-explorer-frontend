@@ -12,8 +12,8 @@ const AboutMe = () => {
       id='aboutme'
     >
       <Section>Студент</Section>
-      <div className='aboutme__all'>
-        <div className='aboutme__info'>
+      <section className='aboutme__all'>
+        <section className='aboutme__info'>
           <h3 className='aboutme__name'>Виталий</h3>
           <p className='aboutme__job'>Фронтенд-разработчик, 30 лет</p>
           <p className='aboutme__text'>
@@ -29,13 +29,13 @@ const AboutMe = () => {
           >
             Github
           </Link>
-        </div>
+        </section>
         <img
           src={photo}
           alt='Фотография'
           className='about__photo'
         />
-      </div>
+      </section>
       <Portfolio />
     </section>
   );

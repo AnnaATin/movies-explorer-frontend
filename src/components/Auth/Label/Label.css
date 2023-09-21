@@ -21,6 +21,9 @@
   font-size: 13px;
   line-height: 17px;
 }
+.label__input:focus {
+  border: 1px solid var(--color-text);
+}
 .label__input_type_error {
   color: var(--color-error);
 }

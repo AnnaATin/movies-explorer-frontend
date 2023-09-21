@@ -3,12 +3,12 @@ import './Burger.css';
 
 const Burger = ({ active, onCloseMenu }) => {
   return (
-    <div className={active ? 'menu menu_active' : 'menu'}>
-      <div
+    <section className={active ? 'menu menu_active' : 'menu'}>
+      <section
         className='menu__hover'
         onClick={onCloseMenu}
       >
-        <div className='menu__content' onClick={(e) => e.stopPropagation()}>
+        <section className='menu__content' onClick={(e) => e.stopPropagation()}>
           <button
             type='button'
             aria-label='Закрыть'
@@ -16,9 +16,9 @@ const Burger = ({ active, onCloseMenu }) => {
             onClick={onCloseMenu}
           />
           <Menu />
-        </div>
-      </div>
-    </div>
+        </section>
+      </section>
+    </section>
   );
 };
 

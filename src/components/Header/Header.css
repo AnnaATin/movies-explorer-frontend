@@ -2,7 +2,7 @@
   display: flex;
   gap: 43px;
   align-items: center;
-  padding: 18px 70px;
+  padding: 8px 70px;
 }
 .header__logo {
   cursor: pointer;

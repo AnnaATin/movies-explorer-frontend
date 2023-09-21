@@ -6,11 +6,11 @@ import { useNavigate } from 'react-router-dom';
 const Login = ({ onLogin, onRegister }) => {
   const navigate = useNavigate();
   return (
-    <div className='login'>
-      <div onClick={() => navigate('/')} className='login__logo'></div>
+    <main className='login'>
+      <href onClick={() => navigate('/')} className='login__logo'></href>
       <h2 className='login__title'>Рады видеть!</h2>
       <Auth isRegForm={false} onLogin={onLogin} onRegister={onRegister} />
-    </div>
+    </main>
   );
 };
 

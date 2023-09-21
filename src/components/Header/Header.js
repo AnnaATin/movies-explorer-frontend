@@ -7,10 +7,10 @@ const Header = () => {
 
   return (
     <header className='header'>
-      <div
+      <figure
         className='header__logo'
         onClick={() => navigate('/')}
-      ></div>
+      ></figure>
       <Navigation />
     </header>
   );

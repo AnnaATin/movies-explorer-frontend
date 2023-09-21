@@ -24,7 +24,7 @@ function MoviesCard(props) {
 
   return (
     <li className='movie'>
-      <div className='movie__card'>
+      <section className='movie__card'>
         <img
           className='movie__picture'
           src={props.card.image}
@@ -36,11 +36,11 @@ function MoviesCard(props) {
           onClick={handleCardLike}
           >
         </button>
-      </div>
-      <div className='movie__header'>
+      </section>
+      <section className='movie__header'>
         <h2 className='movie__title'>{props.card.nameRU}</h2>
         <p className='movie__duration'>{getTimeFromMins(props.card.duration)}</p>
-      </div>
+      </section>
     </li>
   );
 }

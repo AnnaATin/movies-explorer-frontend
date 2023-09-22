@@ -4,7 +4,7 @@
   width: 100%;
   box-sizing: border-box;
   padding-top: 62px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   border-bottom: 1px solid var(--color-button-else);
 }
 .search-form__all {
@@ -50,7 +50,7 @@
   gap: 12px;
   cursor: pointer;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 18px;
   padding:5px 30px 5px 0;
   color: #000;
@@ -64,12 +64,13 @@
   width: 100%;
   height: 100%;
 }
-.search-form__tumbler-visible {
+.search-form__tumbler_visible {
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
-  height: 20px;
-  width: 36px;
+  margin-left:4%;
+  height: 14px;
+  width: 34px;
   box-sizing: content-box;
   position: relative;
   border-radius: 20px;
@@ -78,10 +79,10 @@
   cursor: pointer;
   transform: rotate(180deg);
 }
-.search-form__tumbler-visible::before {
+.search-form__tumbler_visible::before {
   content: '';
-  width: 18px;
-  height: 18px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   box-sizing: border-box;
   position: absolute;
@@ -91,11 +92,11 @@
   background-color: #fff;
   transition: inherit;
 }
-.search-form__tumbler:checked+.search-form__tumbler-visible {
+.search-form__tumbler:checked+.search-form__tumbler_visible {
   background-color: #EBEBEB;
 }
-.search-form__tumbler:checked+.search-form__tumbler-visible::before {
-  transform: translate(100%, -50%);
+.search-form__tumbler:checked+.search-form__tumbler_visible::before {
+  transform: translate(200%, -50%);
 }
 @media (pointer: fine) {
   .search-form__button:hover {
@@ -113,6 +114,23 @@
   .search-form__filter {
     padding: 16px 25px 16px 9px;
   }
+  .search-form__input {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 16px 50px 16px 19px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .search-form {
+    padding-top: 70px;
+    padding-bottom: 10px;
+  }
+  .search-form__filter {
+    padding: 15px 25px 16px 9px;
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 631px) {
   .search-form {
@@ -121,13 +139,6 @@
     margin: 0 auto;
     padding-top: 67px;
     padding-bottom: 110px;
-  }
-  .search-form__input {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    padding: 16px 50px 16px 19px;
   }
   .search-form__icon {
     display: none;
@@ -144,5 +155,16 @@
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .search-form__tumbler_visible{
+    margin-left: 0px;
+  }
+  .search-form {
+    padding-bottom: 90px;
+  }
+  .search-form__filter {
+    top: 160px;
   }
 }

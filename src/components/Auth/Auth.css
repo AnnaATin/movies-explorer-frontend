@@ -12,7 +12,7 @@
   line-height: 13px;
   text-align: center;
 }
-.form__error_type_login {
+.form__error_login {
   margin: 162px 0 20px;
 }
 .form__submit {
@@ -64,7 +64,7 @@
   .form__error {
     margin: 180px 0 20px;
   }
-  .form__error_type_login {
+  .form__error_login {
     margin: 248px 0 20px;
   }
   .form__submit {
@@ -81,4 +81,3 @@
     line-height: 15px;
   }
 }
-  

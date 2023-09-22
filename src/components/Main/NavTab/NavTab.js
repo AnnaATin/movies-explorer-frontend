@@ -25,7 +25,7 @@ const NavTab = () => {
         <li>
           <Link
             className='nav-tab__link'
-            to='aboutme'
+            to='about-me'
             smooth={true}
           >Студент
           </Link>

@@ -1,14 +1,14 @@
-.promo__buttons-promo {
+.promo-btn {
   margin-left: auto;
 }
-.promo__list-promo {
+.promo-btn__list-promo {
   display: flex;
   gap: 30px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.promo__link {
+.promo-btn__link {
   color: var(--color-text);
   text-decoration: none;
   text-align: center;
@@ -18,25 +18,25 @@
   cursor: pointer;
   transition: all 0.2s linear;
 }
-.promo__link_type_login {
+.promo-btn__link_login {
   padding: 8px 20px;
   color: var(--color-inverted);
   background: var(--inverted-color-main);
   border-radius: 3px;
 }
 @media (pointer: fine) {
-  .promo__link:hover {
+  .promo-btn__link:hover {
     opacity: .8;
   }
 }
 @media screen and (max-width: 767px) {
-  .promo__link {
+  .promo-btn__link {
     font-size: 10px;
   }
-  .promo__list-promo {
+  .promo-btn__list-promo {
     gap: 14px;
   }
-  .promo__link_type_login {
+  .promo-btn__link_login {
     padding: 5px 12px;
   }
 }

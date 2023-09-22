@@ -22,14 +22,14 @@ export const movies = [
   {
     duration: 107,
     image: movie2,
-    nameRU: 'Киноальманах «100 лет дизайна»',
+    nameRU: '33 слова о дизайне',
     owner: 0,
     id: 1002,
   },
   {
     duration: 107,
     image: movie3,
-    nameRU: 'В погоне за Бенкси',
+    nameRU: '33 слова о дизайне',
     owner: 0,
     id: 1003,
   },

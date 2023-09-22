@@ -27,7 +27,7 @@ const AboutProject = () => {
           </li>
         </ul>
         <section className='about__duration'>
-          <h3 className='about__duration-heading about__duration-heading_type_inverted'>
+          <h3 className='about__duration-heading about__duration-heading_inverted'>
             1 неделя
           </h3>
           <h3 className='about__duration-heading'>4 недели</h3>

@@ -9,7 +9,7 @@ const Menu = ({ isDesktop }) => {
         {!isDesktop && (
           <li className='links__list-item'>
             <NavLink
-              className={({ isActive }) => `links__link links__link_type_default ${isActive && 'links__link_active'}`}
+              className={({ isActive }) => `links__link links__link_default ${isActive && 'links__link_active'}`}
               to='/'
             >Главная
             </NavLink>
@@ -17,21 +17,21 @@ const Menu = ({ isDesktop }) => {
         )}
         <li className='links__list-item'>
           <NavLink
-            className={({ isActive }) => `links__link links__link_type_default ${isActive && 'links__link_active'}`}
+            className={({ isActive }) => `links__link links__link_default ${isActive && 'links__link_active'}`}
             to='/movies'
           >Фильмы
           </NavLink>
         </li>
         <li className='links__list-item'>
           <NavLink
-            className={({ isActive }) => `links__link links__link_type_default ${isActive && 'links__link_active'}`}
+            className={({ isActive }) => `links__link links__link_default ${isActive && 'links__link_active'}`}
             to='/saved-movies'
           >Сохранённые фильмы
           </NavLink>
         </li>
         <li className='links__list-item'>
           <NavLink
-            className='links__link links__link_type_profile'
+            className='links__link links__link_profile'
             to='/profile'
           >Аккаунт
           </NavLink>

@@ -65,7 +65,7 @@ const Profile = ({ onLogout }) => {
           {isShowSaveButton ? (
             <button
               type='submit'
-              className='profile__button profile__button_type_submit'
+              className='profile__button profile__button_submit'
             >
               Сохранить
             </button>
@@ -80,7 +80,7 @@ const Profile = ({ onLogout }) => {
               </button>
               <button
                 type='button'
-                className='profile__button profile__button_type_logout'
+                className='profile__button profile__button_logout'
                 onClick={onLogout}
               >
                 Выйти из аккаунта

@@ -1,5 +1,5 @@
 .about {
-  padding: 110px 70px 110px;
+  padding: 105px 70px 110px;
   color: var(--color-text);
 }
 .about__info-list {
@@ -47,7 +47,7 @@
   line-height: 17px;
   background-color: var(--nav-link);
 }
-.about__duration-heading_type_inverted {
+.about__duration-heading_inverted {
   color: var(--color-inverted);
   background: var(--inverted-color-main);
 }

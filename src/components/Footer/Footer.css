@@ -11,7 +11,7 @@
   color: var(--color-additional);
   border-bottom: 1px solid var(--nav-link);
 }
-.footer__copyright-wrapper {
+.footer__wrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
@@ -55,7 +55,7 @@
     font-size: 12px;
     line-height: 15px;
   }
-  .footer__copyright-wrapper {
+  .footer__wrapper {
     flex-direction: column-reverse;
     gap: 30px;
   }

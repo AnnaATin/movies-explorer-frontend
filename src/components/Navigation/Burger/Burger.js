@@ -12,7 +12,7 @@ const Burger = ({ active, onCloseMenu }) => {
           <button
             type='button'
             aria-label='Закрыть'
-            className='menu__close'
+            className='menu__button'
             onClick={onCloseMenu}
           />
           <Menu />

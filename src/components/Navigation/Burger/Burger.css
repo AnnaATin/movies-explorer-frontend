@@ -29,7 +29,7 @@
   flex-direction: column;
   align-items: center
 }
-.menu__close {
+.menu__button {
   cursor: pointer;
   position: absolute;
   width: 22px;

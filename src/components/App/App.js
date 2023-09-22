@@ -52,47 +52,47 @@ const App = () => {
       <DeviceContext.Provider value={device}>
         <Suspense fallback={<Preloader/>}>
         <section className="app">
-          <Routes>
-            <Route
-              path='/'
-              element={<Main/>}
-            />
-            <Route
-              path='/movies'
-              element={<Movies list={movies} />}
-            />
-            <Route
-              path='/saved-movies'
-              element={<SavedMovies list={movies} />} 
-            />
-            <Route
-              path='/profile'
-              element={<Profile onLogout={handleLogout} />}
-            />
-            <Route
-              path='/signup'
-              element={
-                <Register
-                  onLogin={handleLogin}
-                  onRegister={handleRegister}
-                />
-              }
-            />
-            <Route
-              path='/signin'
-              element={
-                <Login
-                  onLogin={handleLogin}
-                  onRegister={handleRegister}
-                />
-              }
-            />
-            <Route
-              path='*'
-              element={<NotFound />}
-            />
-          </Routes>
-        </section>  
+            <Routes>
+              <Route
+                path='/'
+                element={<Main/>}
+              />
+              <Route
+                path='/movies'
+                element={<Movies list={movies} />}
+              />
+              <Route
+                path='/saved-movies'
+                element={<SavedMovies list={movies} />} 
+              />
+              <Route
+                path='/profile'
+                element={<Profile onLogout={handleLogout} />}
+              />
+              <Route
+                path='/signup'
+                element={
+                  <Register
+                    onLogin={handleLogin}
+                    onRegister={handleRegister}
+                  />
+                }
+              />
+              <Route
+                path='/signin'
+                element={
+                  <Login
+                    onLogin={handleLogin}
+                    onRegister={handleRegister}
+                  />
+                }
+              />
+              <Route
+                path='*'
+                element={<NotFound />}
+              />
+            </Routes>
+          </section>  
         </Suspense>
       </DeviceContext.Provider>
     </CurrentUserContext.Provider>

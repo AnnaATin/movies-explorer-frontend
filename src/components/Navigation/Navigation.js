@@ -4,7 +4,7 @@ import Menu from './Menu/Menu';
 import Burger from './Burger/Burger';
 import { DeviceContext } from '../../contexts/DeviceContext';
 import { useLocation } from 'react-router-dom';
-import NavPromo from './Promo/Promo';
+import NavPromo from './PromoBtn/PromoBtn';
 
 const Navigation = () => {
   const location = useLocation();
@@ -36,7 +36,7 @@ const Navigation = () => {
           ) : (
             <button
               type='button'
-              className='header__burger-btn'
+              className='header__burger'
               onClick={handleMenu}
             />
           )}

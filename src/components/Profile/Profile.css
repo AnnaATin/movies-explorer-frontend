@@ -87,7 +87,7 @@
   color: var(--color-button-disabled);
   background-color: var(--button-disabled);
 }
-.profile__button_type_submit {
+.profile__button_submit {
   width: 100%;
   height: 45px;
   border: 0;
@@ -99,7 +99,7 @@
   background-color: var(--color-link);
   border-radius: 3px;
 }
-.profile__button_type_logout {
+.profile__button_logout {
   margin-top: 16px;
   font-weight: 500;
   color: var(--color-error);

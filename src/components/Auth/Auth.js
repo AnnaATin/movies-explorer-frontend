@@ -47,7 +47,7 @@ const Auth = ({ isRegForm, onLogin, onRegister }) => {
         errors={errors}
         minLength={6}
       />
-      <p className={`form__error ${!isRegForm && 'form__error_type_login'}`}>
+      <p className={`form__error ${!isRegForm && 'form__error_login'}`}>
         {serverResError && 'Текст ошибки'}
       </p>
       <button

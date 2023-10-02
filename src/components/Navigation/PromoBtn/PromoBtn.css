@@ -1,0 +1,43 @@
+.promo-btn {
+  margin-left: auto;
+}
+.promo-btn__list-promo {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.promo-btn__link {
+  color: var(--color-text);
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.promo-btn__link_login {
+  padding: 8px 20px;
+  color: var(--color-inverted);
+  background: var(--inverted-color-main);
+  border-radius: 3px;
+}
+@media (pointer: fine) {
+  .promo-btn__link:hover {
+    opacity: .8;
+  }
+}
+@media screen and (max-width: 767px) {
+  .promo-btn__link {
+    font-size: 10px;
+  }
+  .promo-btn__list-promo {
+    gap: 14px;
+  }
+  .promo-btn__link_login {
+    padding: 5px 12px;
+  }
+}
+  

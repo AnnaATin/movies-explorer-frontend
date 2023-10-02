@@ -1,7 +1,7 @@
 import React from 'react';
 import './Techs.css';
 import Section from '../Section/Section';
-import { techs } from '../../../utils/techsData';
+import { techs } from '../../../utils/constants';
 
 const Techs = () => {
   return (

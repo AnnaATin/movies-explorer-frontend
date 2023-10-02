@@ -1,18 +1,21 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import './Auth.css';
 import { Link } from 'react-router-dom';
 import useFormAndValidation from '../../hooks/useFormValidation';
 import Label from './Label/Label';
+import Preloader from '../AllMovies/Preloader/Preloader';
+import { ApiServiceContext } from '../../contexts/ApiServiceContext';
 
 const Auth = ({ isRegForm, onLogin, onRegister }) => {
   const { values, errors, isValid, handleChange, resetForm } = useFormAndValidation();
-  // eslint-disable-next-line no-unused-vars
-  const [serverResError, setServerResError] = useState(false);
+  const { isLoading } = useContext(ApiServiceContext);
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
     resetForm();
-    isRegForm ? onRegister() : onLogin();
+    isRegForm
+      ? onRegister({ email: values.email, password: values.password, name: values.name })
+      : onLogin({ email: values.email, password: values.password });
   };
 
   return (
@@ -20,6 +23,7 @@ const Auth = ({ isRegForm, onLogin, onRegister }) => {
       name={isRegForm ? 'register' : 'login'}
       className='form'
       onSubmit={handleSubmit}
+      noValidate
     >
       {isRegForm && (
         <Label
@@ -48,14 +52,14 @@ const Auth = ({ isRegForm, onLogin, onRegister }) => {
         minLength={6}
       />
       <p className={`form__error ${!isRegForm && 'form__error_login'}`}>
-        {serverResError && 'Текст ошибки'}
       </p>
+      {isLoading ? <Preloader /> : 
       <button
         type='submit'
         className={`form__submit ${!isValid && 'form__submit_disabled'}`}
       >
         {isRegForm ? 'Зарегистрироваться' : 'Войти'}
-      </button>
+      </button>}
       <p className='form__link-caption'>
         {isRegForm ? (
           <>

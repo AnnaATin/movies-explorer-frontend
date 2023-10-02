@@ -7,7 +7,7 @@ const Login = ({ onLogin, onRegister }) => {
   const navigate = useNavigate();
   return (
     <main className='login'>
-      <href onClick={() => navigate('/')} className='login__logo'></href>
+      <div onClick={() => navigate('/')} className='login__logo'></div>
       <h2 className='login__title'>Рады видеть!</h2>
       <Auth isRegForm={false} onLogin={onLogin} onRegister={onRegister} />
     </main>

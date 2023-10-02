@@ -1,0 +1,11 @@
+.movies__message-blur {
+    display: flex;
+    justify-content: center;
+  }
+  .movies__message-text {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-text);
+  }
+  

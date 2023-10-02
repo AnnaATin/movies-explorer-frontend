@@ -4,18 +4,30 @@ import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
 import './SavedMovies.css';
+import { useSearchFilms } from '../../../hooks/useSearchFilms';
 
-function SavedMovies({ isLoggedIn, list }) {
-  const moviesFilter = list.filter((item) => !item.owner);
+const SavedMovies = ({ isLoggedIn, movies, onDelete, onError, onTrailerClick }) => {
+  const { sortedMovies, handleSearch, isLoading, text } = useSearchFilms({
+    movies: movies,
+    isSavedPage: true,
+  });
 
   return (
     <>
     <Header isLoggedIn={isLoggedIn} />
     <main className='saved-movies'>
-      <SearchForm />
+      <SearchForm 
+      onSubmit={handleSearch}
+      movies={sortedMovies}
+      onError={onError}
+      />
       <MoviesCardList
-        list={moviesFilter}
-        savedmovies={true}
+        movies={sortedMovies}
+        savedMovies={sortedMovies}
+        isLoading={isLoading}
+        text={text}
+        onDelete={onDelete}
+        onTrailerClick={onTrailerClick}
         >
       </MoviesCardList>
     </main>

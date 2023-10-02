@@ -74,7 +74,7 @@
   box-sizing: content-box;
   position: relative;
   border-radius: 20px;
-  background-color: #2be080;
+  background-color: #EBEBEB;
   transition: 250ms;
   cursor: pointer;
   transform: rotate(180deg);
@@ -93,7 +93,7 @@
   transition: inherit;
 }
 .search-form__tumbler:checked+.search-form__tumbler-visible {
-  background-color: #EBEBEB;
+  background-color: #2be080; 
 }
 .search-form__tumbler:checked+.search-form__tumbler-visible::before {
   transform: translate(200%, -50%);
